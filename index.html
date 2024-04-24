@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>✨ Scratch Project ✨</title>
+    <!-- 👇 css code file 👇 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/style/global.css" />
+  </head>
+  <body class="bg-black text-white">
+    <nav id="navbar"
+      class="fixed z-30 w-full top-0 left-0 flex justify-between items-center px-10 py-6 bg-black/50"
+    >
+      <h1 class="text-3xl font-bold">Portofolio</h1>
+      <div class="flex justify-center items-center gap-16">
+        <a href="#home">Home</a>
+        <a href="#portofolio">Portofolio</a>
+        <a href="#home">Skills</a>
+      </div>
+    </nav>
+
+    <div
+      class="garis-atas h-2 bg-pink-400 fixed top-0 left-0 w-full z-30"
+    ></div>
+    <div class="garis-kiri w-2 bg-pink-400 fixed left-0 h-full z-30"></div>
+    <div class="garis-kanan w-2 bg-pink-400 fixed right-0 h-full z-30"></div>
+    <div
+      class="garis-bawah h-2 bg-pink-400 fixed bottom-0 left-0 w-full z-30"
+    ></div>
+
+    <section id="home" class="relative z-20">
+      <div
+        id="particles-js"
+        class="absolute inset-0 min-h-screen z-0 bg-gradient-to-br from-gray-600/40 via-indigo-600/20 to-purple-600/30"
+      ></div>
+      <div
+        class="flex flex-col items-center pt-36 lg:pt-48 font-sans min-h-screen"
+      >
+        <h1
+          class="font-semibold lg:font-extrabold text-3xl lg:text-5xl text-center mb-16"
+        >
+          <span
+            class="relative typing-title bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-violet-400 to-pink-400 border-double border-b-4 border-purple-400"
+          ></span>
+        </h1>
+        <div
+          class="flex flex-col gap-4 py-6 px-8 mx-6 lg:mx-2 text-center lg:text-left border-dashed border-4 border-indigo-600 backdrop-blur rounded-lg"
+        >
+          <h2 class="font-semibold lg:font-bold text-lg lg:text-2xl">
+            Qoutes For You:
+          </h2>
+          <div
+            class="text-center font-medium lg:font-bold text-sm lg:text-xl font-mono italic"
+          >
+            <h2>Kunci Sukses itu bukan karena banyaknya Kegagalan,</h2>
+            <h2>Tetapi Kegagalan tidak Menghentikannya.</h2>
+          </div>
+        </div>
+        <div class="my-16 lg:my-12">
+          <a
+            href="#portofolio"
+            class="backdrop-blur border-double border-4 border-indigo-600 transition-all duration-300 hover:bg-black py-2 lg:py-3 px-4 lg:px-6 font-semibold lg:font-bold text-lg lg:text-xl rounded"
+          >
+            My Portofolio
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="portofolio" class="px-8 pt-16 relative">
+      <div class="min-h-screen">
+        <img
+          src="https://i.ibb.co/cCJpKG5/rozan.jpg"
+          alt="profile"
+          class="w-80"
+        />
+      </div>
+    </section>
+
+    <!-- Import Particles.js and app.js files -->
+    <script src="particles.js-master/particles.js"></script>
+    <script src="particles.js-master/demo/js/app.js"></script>
+
+    <!-- 👇 javascript code file 👇 -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>
