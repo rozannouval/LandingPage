@@ -4,20 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>✨ Scratch Project ✨</title>
+    <title>✨ Landing Page ✨</title>
     <!-- 👇 css code file 👇 -->
+    <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./src/style/global.css" />
   </head>
   <body class="bg-black text-white">
-    <nav id="navbar"
-      class="fixed z-30 w-full top-0 left-0 flex justify-between items-center px-10 py-6 bg-black/50"
+    <nav
+      id="navbar"
+      class="fixed z-30 w-full top-0 left-0 flex justify-center items-center py-8"
     >
-      <h1 class="text-3xl font-bold">Portofolio</h1>
-      <div class="flex justify-center items-center gap-16">
-        <a href="#home">Home</a>
-        <a href="#portofolio">Portofolio</a>
-        <a href="#home">Skills</a>
+      <div>
+        <div
+          class="navbar-navigasi flex justify-center items-center gap-6 bg-gradient-to-br from-blue-600 to-purple-600 p-4 rounded-xl text-black"
+        >
+          <a
+            href="#home"
+            class="flex gap-2 items-center transition-all duration-[.3s] ease-in-out bg-white hover:bg-pink-300 p-2 rounded-xl"
+          >
+            <i data-feather="home"></i>
+            <h3 class="text-hilang">Home</h3>
+          </a>
+          <a
+            href="#about"
+            class="flex gap-2 items-center transition-all duration-[.3s] ease-in-out bg-white hover:bg-pink-300 p-2 rounded-xl"
+          >
+            <i data-feather="meh"></i>
+            <h3 class="text-hilang">About</h3>
+          </a>
+          <a
+            href="#home"
+            class="flex gap-2 items-center transition-all duration-[.3s] ease-in-out bg-white hover:bg-pink-300 p-2 rounded-xl"
+          >
+            <i data-feather="code"></i>
+            <h3 class="text-hilang">Skills</h3>
+          </a>
+          <a
+            href="#home"
+            class="flex gap-2 items-center transition-all duration-[.3s] ease-in-out bg-white hover:bg-pink-300 p-2 rounded-xl"
+          >
+            <i data-feather="phone"></i>
+            <h3 class="text-hilang">Contact</h3>
+          </a>
+        </div>
       </div>
     </nav>
 
@@ -46,7 +76,7 @@
           ></span>
         </h1>
         <div
-          class="flex flex-col gap-4 py-6 px-8 mx-6 lg:mx-2 text-center lg:text-left border-dashed border-4 border-indigo-600 backdrop-blur rounded-lg"
+          class="qoutes flex flex-col gap-4 py-6 px-8 mx-6 lg:mx-2 text-center lg:text-left border-dashed border-4 border-indigo-600 backdrop-blur rounded-lg"
         >
           <h2 class="font-semibold lg:font-bold text-lg lg:text-2xl">
             Qoutes For You:
@@ -60,7 +90,7 @@
         </div>
         <div class="my-16 lg:my-12">
           <a
-            href="#portofolio"
+            href="#about"
             class="backdrop-blur border-double border-4 border-indigo-600 transition-all duration-300 hover:bg-black py-2 lg:py-3 px-4 lg:px-6 font-semibold lg:font-bold text-lg lg:text-xl rounded"
           >
             My Portofolio
@@ -69,12 +99,56 @@
       </div>
     </section>
 
-    <section id="portofolio" class="px-8 pt-16 relative">
-      <div class="min-h-screen">
+    <section
+      id="about"
+      class="px-8 pt-16 relative min-h-screen text-black bg-gray-400"
+    >
+      <div
+        class="flex justify-between items-center flex-col-reverse lg:flex-row gap-16 px-8 lg:px-16 py-8 bg-gray-200 rounded-xl shadow-xl shadow-black/30"
+      >
+        <div class="flex flex-col gap-4 w-full">
+          <h1 class="text-4xl font-bold">Halo, Saya</h1>
+          <h1 class="text-5xl font-bold text-blue-600">Rozan Nouval</h1>
+          <div
+            class="bg-gray-300 py-1 w-full flex justify-center gap-1 rounded"
+          >
+            <p class="">Siswa dari sekolah di</p>
+            <a
+              href="https://smkyadikasoreang.sch.id/"
+              target="_blank"
+              rel="noopener"
+              class="flex gap-1 text-red-800"
+            >
+              SMK Yadika Soreang
+              <i data-feather="external-link"></i>
+            </a>
+          </div>
+          <p class="">
+            Perkenalkan, Saya seorang siswa dari sekolah SMK Yadika Soreang.
+            Saya mengambil jurusan RPL supaya bisa menjadi programmer, memang
+            tidak mudah tetapi saya akan berusaha.
+          </p>
+          <div class="flex items-center gap-4 mt-4">
+            <a
+              href=""
+              class="bg-black text-white p-4 rounded-xl flex items-center gap-2"
+            >
+              <i data-feather="github"></i>
+              <h3>Github</h3>
+            </a>
+            <a
+              href=""
+              class="bg-gradient-to-br from-blue-600 to-pink-600 text-white p-4 rounded-xl flex items-center gap-2"
+            >
+              <i data-feather="instagram"></i>
+              <h3>Instagram</h3>
+            </a>
+          </div>
+        </div>
         <img
           src="https://i.ibb.co/cCJpKG5/rozan.jpg"
           alt="profile"
-          class="w-80"
+          class="md:w-96 md:h-96 w-full border border-white rounded-2xl bg-cover"
         />
       </div>
     </section>
@@ -82,6 +156,11 @@
     <!-- Import Particles.js and app.js files -->
     <script src="particles.js-master/particles.js"></script>
     <script src="particles.js-master/demo/js/app.js"></script>
+
+    <!-- Untuk Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
 
     <!-- 👇 javascript code file 👇 -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
