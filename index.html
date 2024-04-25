@@ -6,51 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>✨ Rozan Nouval - Landing Page ✨</title>
     <!-- 👇 css code file 👇 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./src/style/global.css" />
   </head>
   <body class="bg-black text-white">
+    <!-- NAVBAR -->
     <nav
       id="navbar"
       class="fixed z-30 w-full top-0 left-0 flex justify-center items-center py-8"
     >
-      <div>
-        <div
-          class="navbar-navigasi flex justify-center items-center gap-6 bg-gradient-to-br from-blue-600 to-purple-600 p-4 rounded-xl text-black"
+      <div
+        class="navbar-navigasi flex justify-center items-center gap-6 bg-gradient-to-br from-blue-600 to-purple-600 p-4 rounded-xl text-black"
+      >
+        <a
+          href="#home"
+          class="flex gap-2 items-center transition-all duration-[.3s] ease-in-out bg-white hover:bg-pink-300 p-2 rounded-xl"
         >
-          <a
-            href="#home"
-            class="flex gap-2 items-center transition-all duration-[.3s] ease-in-out bg-white hover:bg-pink-300 p-2 rounded-xl"
-          >
-            <i data-feather="home"></i>
-            <h3 class="text-hilang">Home</h3>
-          </a>
-          <a
-            href="#about"
-            class="flex gap-2 items-center transition-all duration-[.3s] ease-in-out bg-white hover:bg-pink-300 p-2 rounded-xl"
-          >
-            <i data-feather="meh"></i>
-            <h3 class="text-hilang">About</h3>
-          </a>
-          <a
-            href="#home"
-            class="flex gap-2 items-center transition-all duration-[.3s] ease-in-out bg-white hover:bg-pink-300 p-2 rounded-xl"
-          >
-            <i data-feather="code"></i>
-            <h3 class="text-hilang">Skills</h3>
-          </a>
-          <a
-            href="#home"
-            class="flex gap-2 items-center transition-all duration-[.3s] ease-in-out bg-white hover:bg-pink-300 p-2 rounded-xl"
-          >
-            <i data-feather="phone"></i>
-            <h3 class="text-hilang">Contact</h3>
-          </a>
-        </div>
+          <i data-feather="home"></i>
+          <h3 class="text-hilang">Home</h3>
+        </a>
+        <a
+          href="#about"
+          class="flex gap-2 items-center transition-all duration-[.3s] ease-in-out bg-white hover:bg-pink-300 p-2 rounded-xl"
+        >
+          <i data-feather="meh"></i>
+          <h3 class="text-hilang">About</h3>
+        </a>
+        <a
+          href="#skills"
+          class="flex gap-2 items-center transition-all duration-[.3s] ease-in-out bg-white hover:bg-pink-300 p-2 rounded-xl"
+        >
+          <i data-feather="code"></i>
+          <h3 class="text-hilang">Skills</h3>
+        </a>
+        <a
+          href="#contact"
+          class="flex gap-2 items-center transition-all duration-[.3s] ease-in-out bg-white hover:bg-pink-300 p-2 rounded-xl"
+        >
+          <i data-feather="phone"></i>
+          <h3 class="text-hilang">Contact</h3>
+        </a>
       </div>
     </nav>
 
+    <!-- GARIS -->
     <div
       class="garis-atas h-2 bg-pink-400 fixed top-0 left-0 w-full z-30"
     ></div>
@@ -60,6 +64,7 @@
       class="garis-bawah h-2 bg-pink-400 fixed bottom-0 left-0 w-full z-30"
     ></div>
 
+    <!-- HOME -->
     <section id="home" class="relative z-20">
       <div
         id="particles-js"
@@ -99,65 +104,326 @@
       </div>
     </section>
 
-    <section
-      id="about"
-      class="px-8 pt-16 relative min-h-screen text-black bg-gray-400 pb-8"
-    >
-      <div
-        class="flex justify-between items-center flex-col-reverse lg:flex-row gap-4 md:gap-16 px-8 lg:px-16 py-8 bg-gray-200 rounded-xl shadow-xl shadow-black/30"
-      >
-        <div class="flex flex-col gap-2 md:gap-4 w-full">
-          <h1 class="text-2xl md:text-4xl font-bold">Halo, Saya</h1>
-          <h1 class="text-3xl md:text-5xl font-bold text-blue-600">Rozan Nouval</h1>
-          <div
-            class="bg-gray-300 py-1 w-full flex justify-center items-center flex-col md:flex-row gap-1 rounded"
-          >
-            <p class="">Siswa dari sekolah di</p>
-            <a
-              href="https://smkyadikasoreang.sch.id/"
-              target="_blank"
-              rel="noopener"
-              class="flex gap-1 text-red-800"
+    <div class="min-h-screen text-black bg-gray-400 relative pb-8 px-8">
+      <!-- ABOUT -->
+      <section id="about" class="relative pt-16 pb-8">
+        <div
+          class="flex justify-between items-center flex-col-reverse lg:flex-row gap-4 md:gap-16 px-8 lg:px-16 py-8 bg-gray-200 rounded-xl shadow-xl shadow-black/30"
+        >
+          <div class="flex flex-col gap-2 md:gap-4 w-full">
+            <h1 class="text-2xl md:text-4xl font-bold">Halo, Saya</h1>
+            <h1 class="text-3xl md:text-5xl font-bold text-blue-600">
+              Rozan Nouval
+            </h1>
+            <div
+              class="bg-gray-300 py-1 w-full flex justify-center items-center flex-col md:flex-row gap-1 rounded"
             >
-              SMK Yadika Soreang
-              <i data-feather="external-link"></i>
-            </a>
+              <p class="">Siswa dari sekolah di</p>
+              <a
+                href="https://smkyadikasoreang.sch.id/"
+                target="_blank"
+                rel="noopener"
+                class="flex gap-1 text-red-800"
+              >
+                SMK Yadika Soreang
+                <i data-feather="external-link"></i>
+              </a>
+            </div>
+            <p class="">
+              Perkenalkan, Saya seorang siswa dari sekolah SMK Yadika Soreang.
+              Saya mengambil jurusan RPL karena saya ingin menjadi programmer,
+              memang tidak mudah karena yang mudah itu hanyalah menyerah.
+              Meskipun Sulit tetapi tak ada seorang pun yang bisa menebak
+              hasilnya.
+            </p>
+            <div class="flex sm:items-center flex-col sm:flex-row gap-4 mt-4">
+              <a
+                href="https://github.com/rozannouval"
+                target="_blank"
+                rel="noopener"
+                class="bg-black text-white p-4 rounded-xl flex items-center gap-2"
+              >
+                <i data-feather="github"></i>
+                <h3>Github</h3>
+              </a>
+              <a
+                href="https://www.instagram.com/rozannouvall/"
+                target="_blank"
+                rel="noopener"
+                class="bg-gradient-to-br from-blue-600 to-pink-600 text-white p-4 rounded-xl flex items-center gap-2"
+              >
+                <i data-feather="instagram"></i>
+                <h3>Instagram</h3>
+              </a>
+            </div>
           </div>
-          <p class="">
-            Perkenalkan, Saya seorang siswa dari sekolah SMK Yadika Soreang.
-            Saya mengambil jurusan RPL supaya bisa menjadi programmer, memang
-            tidak mudah tetapi saya akan berusaha.
-          </p>
-          <div class="flex sm:items-center flex-col sm:flex-row gap-4 mt-4">
-            <a
-              href="https://github.com/rozannouval"
-              target="_blank"
-              rel="noopener"
-              class="bg-black text-white p-4 rounded-xl flex items-center gap-2"
+          <img
+            src="https://i.ibb.co/cCJpKG5/rozan.jpg"
+            alt="profile"
+            class="md:w-96 md:h-96 w-full border border-white rounded-2xl bg-cover"
+          />
+        </div>
+
+        <div
+          class="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-4 md:grid-cols-3 md:gap-8 mt-8"
+        >
+          <div
+            class="bg-gray-200 shadow-xl shadow-black/30 p-4 mb-4 rounded-lg flex flex-col gap-4 text-center"
+          >
+            <h1
+              class="bg-yellow-400 text-center text-3xl font-bold p-2 rounded-full"
             >
-              <i data-feather="github"></i>
-              <h3>Github</h3>
-            </a>
-            <a
-              href="https://www.instagram.com/rozannouvall/"
-              target="_blank"
-              rel="noopener"
-              class="bg-gradient-to-br from-blue-600 to-pink-600 text-white p-4 rounded-xl flex items-center gap-2"
+              Motivasi
+            </h1>
+            <p class="italic bg-gray-300 p-4 rounded-md h-[100%]">
+              Orang Hebat bukanlah Hebat karena tidak pernah gagal. Tetapi Orang
+              Hebat menjadi Hebat karena selalu bangkit dari kegagalannya.
+            </p>
+          </div>
+          <div
+            class="bg-gray-200 shadow-xl shadow-black/30 p-4 mb-4 rounded-lg flex flex-col gap-4 text-center"
+          >
+            <h1
+              class="bg-yellow-400 text-center text-3xl font-bold p-2 rounded-full"
             >
-              <i data-feather="instagram"></i>
-              <h3>Instagram</h3>
-            </a>
+              Saran
+            </h1>
+            <p class="italic bg-gray-300 p-4 rounded-md h-[100%]">
+              Ketika kamu memiliki kekuatan, kamu tidak perlu berbicara terlalu
+              banyak. Orang akan mengerti dari tindakanmu.
+            </p>
+          </div>
+          <div
+            class="bg-gray-200 shadow-xl shadow-black/30 p-4 mb-4 rounded-lg flex flex-col gap-4 text-center"
+          >
+            <h1
+              class="bg-yellow-400 text-center text-3xl font-bold p-2 rounded-full"
+            >
+              Motivasi
+            </h1>
+            <p class="italic bg-gray-300 p-4 rounded-md h-[100%]">
+              Tanpa Bakat? itu terdengar bagus, kamu bisa menjadi apa pun yang
+              kamu inginkan. Yang dibutuhkan hanyalah Niat dan Tekad yang kuat
+              untuk bangkit dari kegagalan.
+            </p>
           </div>
         </div>
-        <img
-          src="https://i.ibb.co/cCJpKG5/rozan.jpg"
-          alt="profile"
-          class="md:w-96 md:h-96 w-full border border-white rounded-2xl bg-cover"
-        />
+      </section>
+    </div>
+
+    <!-- SKILLS -->
+    <section id="skills" class="min-h-screen bg-gray-800 px-8 py-8 text-black">
+      <h1
+        class="w-full p-4 rounded-full bg-yellow-400 text-4xl font-bold mt-4 text-center"
+      >
+        MY SKILLS
+      </h1>
+      <div class="py-8 grid grid-cols-1 lg:grid-cols-2 gap-8 px-0 lg:px-4">
+        <div class="bg-gray-300 rounded-xl flex flex-col lg:flex-row">
+          <img
+            src="https://oneteamsolutions.in/blogoneteam/wp-content/uploads/2020/05/REACT-JS-KOCHI.png"
+            alt="react.js"
+            class="w-full lg:w-60 h-60 bg-gray-100 rounded-t-xl lg:rounded-l-xl aspect-[1/1] object-cover object-center"
+          />
+          <div class="flex flex-col justify-center gap-2 pl-4 pr-6 py-4">
+            <h1 class="text-4xl font-bold mb-4">React.JS</h1>
+            <div>
+              <h3>Skill Persen:</h3>
+              <div class="flex items-center justify-between">
+                <span class="text-gray-600">60%</span>
+              </div>
+              <div class="bg-white rounded-full h-4 mt-1">
+                <div class="bg-blue-500 h-full rounded-full w-[60%]"></div>
+              </div>
+            </div>
+            <p class="italic text-sm mt-2">
+              "Saya lumayan menyukai React.JS karena dapat menggunakan kembali
+              komponen"
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gray-300 rounded-xl flex flex-col lg:flex-row flex">
+          <img
+            src="https://th.bing.com/th/id/OIP.5n7AMgRPz_pUsHc_z9JVRgAAAA?w=224&h=224&rs=1&pid=ImgDetMain"
+            alt="Next.js"
+            class="w-full lg:w-60 h-60 bg-gray-100 rounded-t-xl lg:rounded-l-xl aspect-[1/1] object-cover object-center"
+          />
+          <div class="flex flex-col justify-center gap-2 pl-4 pr-6 py-4">
+            <h1 class="text-4xl font-bold mb-4">Next.JS</h1>
+            <div>
+              <h3>Skill Persen:</h3>
+              <div class="flex items-center justify-between">
+                <span class="text-gray-600">70%</span>
+              </div>
+              <div class="bg-white rounded-full h-4 mt-1">
+                <div class="bg-green-600 h-full rounded-full w-[70%]"></div>
+              </div>
+            </div>
+            <p class="italic text-sm mt-2">
+              "Saya sangat menyukai Next.JS yang merupakan framework React.js
+              dan menyediakan fitur yang lebih powerfull"
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gray-300 rounded-xl flex flex-col lg:flex-row flex">
+          <img
+            src="https://res.cloudinary.com/andresbaravalle/image/upload/v1542975073/logo-javascript_2x_cpugmu.png"
+            alt="js"
+            class="w-full lg:w-60 h-60 bg-gray-100 rounded-t-xl lg:rounded-l-xl aspect-[1/1] object-cover object-center"
+          />
+          <div class="flex flex-col justify-center gap-2 pl-4 pr-6 py-4">
+            <h1 class="text-4xl font-bold mb-4">JavaScript</h1>
+            <div>
+              <h3>Skill Persen:</h3>
+              <div class="flex items-center justify-between">
+                <span class="text-gray-600">35%</span>
+              </div>
+              <div class="bg-white rounded-full h-4 mt-1">
+                <div class="bg-yellow-500 h-full rounded-full w-[35%]"></div>
+              </div>
+            </div>
+            <p class="italic text-sm mt-2">
+              "Saya sedikit bisa menggunakan JavaScript karena konsep yang
+              mencakup luas dan terkadang error dalam logika"
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gray-300 rounded-xl flex flex-col lg:flex-row flex">
+          <img
+            src="https://cdn.hashnode.com/res/hashnode/image/upload/v1677197124486/86fa95f6-e896-4c96-b180-7f9dc1b8e71d.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
+            alt="astro.js"
+            class="w-full lg:w-60 h-60 bg-gray-100 rounded-t-xl lg:rounded-l-xl aspect-[1/1] object-cover object-center"
+          />
+
+          <div class="flex flex-col justify-center gap-2 pl-4 pr-6 py-4">
+            <h1 class="text-4xl font-bold mb-4">Astro.JS</h1>
+            <div>
+              <h3>Skill Persen:</h3>
+              <div class="flex items-center justify-between">
+                <span class="text-gray-600">25%</span>
+              </div>
+              <div class="bg-white rounded-full h-4 mt-1">
+                <div class="bg-red-600 h-full rounded-full w-[25%]"></div>
+              </div>
+            </div>
+            <p class="italic text-sm mt-2">
+              "Saya tertarik dengan Astro.js tetapi belum banyak user yang
+              mengetahui potensi Astro ini sehingga informasi terbatas"
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <footer class="w-full text-center p-4 pb-6 bg-gradient-to-br from-blue-600 to-pink-600 text-white">
+    <section id="contact" class="min-h-screen bg-gray-400 text-black pb-16">
+      <div class="pt-16 px-8">
+        <h1
+          class="w-full p-4 rounded-full bg-gradient-to-br from-pink-600 to-purple-600 text-white text-center text-4xl font-bold shadow-xl shadow-black/30"
+        >
+          CONTACT ME
+        </h1>
+        <div class="flex flex-col justify-center md:flex-row md:justify-between md:gap-8">
+          <div class="mt-16 bg-gray-200 p-6 rounded-xl shadow-xl shadow-black/30">
+            <h2
+              class="bg-purple-600 text-white py-4 px-16 rounded-full text-center text-xl md:text-3xl font-bold"
+            >
+              GABUNG YUK!
+            </h2>
+            <div class="mt-8 flex flex-col gap-4">
+              <div class="flex items-center gap-2">
+                <a
+                  href="https://discord.com/invite/PhvCBM9E"
+                  target="_blank"
+                  rel="noopener"
+                  class="text-2xl font-bold p-4 w-full bg-gradient-to-br from-purple-300 to-blue-300 rounded-xl flex items-center gap-2"
+                >
+                  <img src="src/img/discord.svg" alt="dc" class="w-12" />
+                  <h3>Ngoding Bareng</h3>
+                </a>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <a
+                  href="https://discord.gg/SCFWPATh"
+                  target="_blank"
+                  rel="noopener"
+                  class="text-2xl font-bold p-4 w-full bg-gradient-to-br from-purple-300 to-blue-300 rounded-xl flex items-center gap-2"
+                >
+                  <img src="src/img/discord.svg" alt="dc" class="w-12" />
+                  <h3>WPU - UNPAS</h3>
+                </a>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <a
+                  href="https://discord.gg/CUAHkwQP"
+                  target="_blank"
+                  rel="noopener"
+                  class="text-2xl font-bold p-4 w-full bg-gradient-to-br from-purple-300 to-blue-300 rounded-xl flex items-center gap-2"
+                >
+                  <img src="src/img/discord.svg" alt="dc" class="w-12" />
+                  <h3 class="flex items-center gap-2">
+                    Junior DEV<i data-feather="code"></i>
+                  </h3>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-16 bg-gray-200 p-6 rounded-xl shadow-xl shadow-black/30">
+            <h2
+              class="bg-blue-600 text-white py-4 px-16 rounded-full text-center text-xl md:text-3xl font-bold"
+            >
+              HUBUNGI SAYA
+            </h2>
+            <div class="mt-8 flex flex-col gap-4">
+              <div class="flex items-center ">
+                <a
+                  href="https://api.whatsapp.com/send/?phone=62895805001933&text&type=phone_number&app_absent=0"
+                  target="_blank"
+                  rel="noopener"
+                  class="text-2xl font-bold p-4 w-full bg-green-300 rounded-xl flex items-center gap-2"
+                >
+                  <i class="fa fa-whatsapp text-4xl"></i>
+                  <h3 class="flex items-center gap-2 text-xl md:text-2xl">+62895805001933</h3>
+                </a>
+              </div>
+
+              <div class="flex items-center">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                  class="text-2xl font-bold p-4 w-full bg-blue-300 rounded-xl flex items-center gap-4"
+                >
+                  <i class="fa fa-facebook text-4xl"></i>
+                  <h3 class="flex items-center gap-4">Facebook</h3>
+                </a>
+              </div>
+
+              <div class="flex items-center">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                  class="text-2xl font-bold p-4 w-full bg-gradient-to-br from-blue-300 to-purple-300 rounded-xl flex items-center gap-2"
+                >
+                  <i class="fa fa-instagram text-4xl"></i>
+                  <h3 class="flex items-center gap-4">Instagram</h3>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="w-full text-center p-4 pb-6 bg-gradient-to-br from-blue-600 to-pink-600 text-white"
+    >
       <h1>©copyright by Rozan Nouval 2024</h1>
     </footer>
 
