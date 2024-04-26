@@ -12,37 +12,49 @@ let typedTitle = new Typed(".typing-title", {
 // Toggle class active untuk hamburger menu
 const navbarNavigasi = document.querySelector(".text-hilang");
 
-// SKILLS
-const skills = [
-  { name: "HTML", percentage: 80 },
-  { name: "CSS", percentage: 80 },
-  { name: "JavaScript", percentage: 40 },
-  { name: "React.js", percentage: 50 },
-  { name: "Next.js", percentage: 60 },
-  { name: "Astro.js", percentage: 25 },
-  { name: "Tailwind", percentage: 80 },
-  { name: "Shadcn UI", percentage: 80 },
-  { name: "PHP", percentage: 10 },
-  { name: "Express.js", percentage: 30 },
-  { name: "Supabase", percentage: 20 },
-];
+let lastScrollTop = 0;
+const navbar = document.getElementById("navbar");
 
-const skillsContainer = document.getElementById('skillsContainer');
+window.addEventListener("scroll", function() {
+    let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-skills.forEach((skill) => {
-  const skillElement = document.createElement('div');
-  skillElement.className = 'mb-4';
+    if (currentScrollTop > lastScrollTop) {
+        // Scrolling down
+        navbar.classList.add("hidden");
+    } else {
+        // Scrolling up
+        navbar.classList.remove("hidden");
+    }
 
-  const innerHTML = `
-    <div class="flex items-center justify-between">
-      <span class="font-semibold">${skill.name}</span>
-      <span class="text-gray-600">${skill.percentage}%</span>
-    </div>
-    <div class="bg-gray-300 rounded-full h-4 mt-1">
-      <div class="bg-blue-500 h-full rounded-full" style="width: ${skill.percentage}%"></div>
-    </div>
-  `;
+    lastScrollTop = currentScrollTop;
+});
 
-  skillElement.innerHTML = innerHTML;
-  skillsContainer.appendChild(skillElement);
+
+document.addEventListener('scroll', () => {
+  const scrollPos = window.scrollY;
+
+  const sections = {
+    home: document.querySelector('#home').offsetTop,
+    about: document.querySelector('#about').offsetTop,
+    skills: document.querySelector('#skills').offsetTop,
+    contact: document.querySelector('#contact').offsetTop
+  };
+
+  const navbarLinks = document.querySelectorAll('.navbar-navigasi a');
+
+  // Hapus kelas 'active' dari semua tautan
+  navbarLinks.forEach((link) => {
+    link.classList.remove('active');
+  });
+
+  // Tentukan posisi scroll untuk menentukan bagian aktif
+  if (scrollPos < sections.about) {
+    document.querySelector('a[href="#home"]').classList.add('active');
+  } else if (scrollPos < sections.skills) {
+    document.querySelector('a[href="#about"]').classList.add('active');
+  } else if (scrollPos < sections.contact) {
+    document.querySelector('a[href="#skills"]').classList.add('active');
+  } else {
+    document.querySelector('a[href="#contact"]').classList.add('active');
+  }
 });

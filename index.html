@@ -25,7 +25,7 @@
       >
         <a
           href="#home"
-          class="flex gap-2 items-center transition-all duration-[.3s] ease-in-out bg-white hover:bg-pink-300 p-2 rounded-xl"
+          class="flex gap-2 items-end transition-all duration-[.3s] ease-in-out bg-white hover:bg-pink-300 p-2 rounded-xl"
         >
           <i data-feather="home"></i>
           <h3 class="text-hilang">Home</h3>
@@ -65,13 +65,13 @@
     ></div>
 
     <!-- HOME -->
-    <section id="home" class="relative z-20">
+    <section id="home" class="relative z-20 flex items-center justify-center">
       <div
         id="particles-js"
-        class="absolute inset-0 min-h-screen z-0 bg-gradient-to-br from-gray-600/40 via-indigo-600/20 to-purple-600/30"
+        class="absolute inset-0 z-[-1] bg-gradient-to-br from-gray-600/40 via-indigo-600/20 to-purple-600/30"
       ></div>
       <div
-        class="flex flex-col items-center pt-36 lg:pt-48 font-sans min-h-screen"
+        class="flex flex-col items-center justify-center md:justify-start lg:pt-48 font-sans py-36 min-h-screen relative"
       >
         <h1
           class="font-semibold lg:font-extrabold text-3xl lg:text-5xl text-center mb-16 px-4"
@@ -81,7 +81,7 @@
           ></span>
         </h1>
         <div
-          class="qoutes flex flex-col gap-4 py-6 px-8 mx-6 lg:mx-2 text-center lg:text-left border-dashed border-4 border-indigo-600 backdrop-blur rounded-lg"
+          class="qoutes flex flex-col gap-4 py-6 px-8 mx-6 lg:mx-2 text-center lg:text-left border-dashed border-4 border-indigo-600 backdrop-blur rounded-lg hover:shadow-lg hover:shadow-pink-600"
         >
           <h2 class="font-semibold lg:font-bold text-lg lg:text-2xl">
             Qoutes For You:
@@ -96,7 +96,7 @@
         <div class="my-16 lg:my-12">
           <a
             href="#about"
-            class="backdrop-blur border-double border-4 border-indigo-600 transition-all duration-300 hover:bg-black py-2 lg:py-3 px-4 lg:px-6 font-semibold lg:font-bold text-lg lg:text-xl rounded"
+            class="backdrop-blur border-double border-4 border-indigo-600 transition-all duration-300 hover:bg-black py-2 hover:shadow-lg hover:shadow-pink-600 lg:py-3 px-4 lg:px-6 font-semibold lg:font-bold text-lg lg:text-xl rounded"
           >
             My Portofolio
           </a>
@@ -104,15 +104,15 @@
       </div>
     </section>
 
-    <div class="min-h-screen text-black bg-gray-400 relative pb-8 px-8">
+    <div class="text-black bg-gray-400 relative pb-8 px-8">
       <!-- ABOUT -->
       <section id="about" class="relative pt-16 pb-8">
         <div
           class="flex justify-between items-center flex-col-reverse lg:flex-row gap-4 md:gap-16 px-8 lg:px-16 py-8 bg-gray-200 rounded-xl shadow-xl shadow-black/30"
         >
           <div class="flex flex-col gap-2 md:gap-4 w-full">
-            <h1 class="text-2xl md:text-4xl font-bold">Halo, Saya</h1>
-            <h1 class="text-3xl md:text-5xl font-bold text-blue-600">
+            <h1 class="font-cursive text-4xl font-bold">Halo, Saya</h1>
+            <h1 class="font-cursive text-5xl font-bold text-blue-600">
               Rozan Nouval
             </h1>
             <div
@@ -141,7 +141,7 @@
                 href="https://github.com/rozannouval"
                 target="_blank"
                 rel="noopener"
-                class="bg-black text-white p-4 rounded-xl flex items-center gap-2"
+                class="bg-black text-white p-4 rounded-xl flex items-center gap-2 hover:shadow-lg hover:shadow-black transition-all duration-[.3s] hover:bg-white hover:text-black"
               >
                 <i data-feather="github"></i>
                 <h3>Github</h3>
@@ -150,7 +150,7 @@
                 href="https://www.instagram.com/rozannouvall/"
                 target="_blank"
                 rel="noopener"
-                class="bg-gradient-to-br from-blue-600 to-pink-600 text-white p-4 rounded-xl flex items-center gap-2"
+                class="bg-gradient-to-br from-blue-600 to-pink-600 text-white p-4 rounded-xl flex items-center gap-2 hover:shadow-md hover:shadow-blue-600 transition-all duration-[.3s]"
               >
                 <i data-feather="instagram"></i>
                 <h3>Instagram</h3>
@@ -176,10 +176,12 @@
               Motivasi
             </h1>
             <p class="italic bg-gray-300 p-4 rounded-md h-[100%]">
-              Orang Hebat bukanlah Hebat karena tidak pernah gagal. Tetapi Orang
-              Hebat menjadi Hebat karena selalu bangkit dari kegagalannya.
+              Tanpa Bakat? itu terdengar bagus, kamu bisa menjadi apapun yang
+              kamu inginkan. Yang dibutuhkan hanyalah Niat dan Tekad yang kuat
+              untuk bangkit dari kegagalan.
             </p>
           </div>
+
           <div
             class="bg-gray-200 shadow-xl shadow-black/30 p-4 mb-4 rounded-lg flex flex-col gap-4 text-center"
           >
@@ -202,9 +204,8 @@
               Motivasi
             </h1>
             <p class="italic bg-gray-300 p-4 rounded-md h-[100%]">
-              Tanpa Bakat? itu terdengar bagus, kamu bisa menjadi apa pun yang
-              kamu inginkan. Yang dibutuhkan hanyalah Niat dan Tekad yang kuat
-              untuk bangkit dari kegagalan.
+              Orang Hebat bukanlah Hebat karena tidak pernah gagal. Tetapi Orang
+              Hebat menjadi Hebat karena selalu bangkit dari kegagalannya.
             </p>
           </div>
         </div>
@@ -212,14 +213,16 @@
     </div>
 
     <!-- SKILLS -->
-    <section id="skills" class="min-h-screen bg-gray-800 px-8 py-8 text-black">
+    <section id="skills" class="bg-gray-800 px-8 py-8 text-black">
       <h1
-        class="w-full p-4 rounded-full bg-yellow-400 text-4xl font-bold mt-4 text-center"
+        class="w-full p-4 rounded-full bg-yellow-400 shadow-lg shadow-pink-600 text-4xl font-bold mt-4 text-center"
       >
         MY SKILLS
       </h1>
       <div class="py-8 grid grid-cols-1 lg:grid-cols-2 gap-8 px-0 lg:px-4">
-        <div class="bg-gray-300 rounded-xl flex flex-col lg:flex-row">
+        <div
+          class="bg-gray-300 rounded-xl flex flex-col lg:flex-row shadow-lg shadow-blue-600"
+        >
           <img
             src="https://oneteamsolutions.in/blogoneteam/wp-content/uploads/2020/05/REACT-JS-KOCHI.png"
             alt="react.js"
@@ -243,7 +246,9 @@
           </div>
         </div>
 
-        <div class="bg-gray-300 rounded-xl flex flex-col lg:flex-row flex">
+        <div
+          class="bg-gray-300 rounded-xl flex flex-col lg:flex-row flex shadow-lg shadow-green-600"
+        >
           <img
             src="https://th.bing.com/th/id/OIP.5n7AMgRPz_pUsHc_z9JVRgAAAA?w=224&h=224&rs=1&pid=ImgDetMain"
             alt="Next.js"
@@ -267,7 +272,9 @@
           </div>
         </div>
 
-        <div class="bg-gray-300 rounded-xl flex flex-col lg:flex-row flex">
+        <div
+          class="bg-gray-300 rounded-xl flex flex-col lg:flex-row flex shadow-lg shadow-yellow-600"
+        >
           <img
             src="https://res.cloudinary.com/andresbaravalle/image/upload/v1542975073/logo-javascript_2x_cpugmu.png"
             alt="js"
@@ -291,7 +298,9 @@
           </div>
         </div>
 
-        <div class="bg-gray-300 rounded-xl flex flex-col lg:flex-row flex">
+        <div
+          class="bg-gray-300 rounded-xl flex flex-col lg:flex-row flex shadow-lg shadow-red-600"
+        >
           <img
             src="https://cdn.hashnode.com/res/hashnode/image/upload/v1677197124486/86fa95f6-e896-4c96-b180-7f9dc1b8e71d.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
             alt="astro.js"
@@ -318,17 +327,21 @@
       </div>
     </section>
 
-    <section id="contact" class="min-h-screen bg-gray-400 text-black pb-16">
+    <section id="contact" class="bg-gray-400 text-black pb-16">
       <div class="pt-16 px-8">
         <h1
           class="w-full p-4 rounded-full bg-gradient-to-br from-pink-600 to-purple-600 text-white text-center text-4xl font-bold shadow-xl shadow-black/30"
         >
           CONTACT ME
         </h1>
-        <div class="flex flex-col justify-center md:flex-row md:justify-between md:gap-8">
-          <div class="mt-16 bg-gray-200 p-6 rounded-xl shadow-xl shadow-black/30">
+        <div
+          class="flex flex-col justify-center md:flex-row md:gap-16 w-full md:px-8"
+        >
+          <div
+            class="mt-16 bg-gray-200 p-6 rounded-xl shadow-xl shadow-black/30 w-full"
+          >
             <h2
-              class="bg-purple-600 text-white py-4 px-16 rounded-full text-center text-xl md:text-3xl font-bold"
+              class="bg-yellow-400 py-4 px-16 rounded-full text-center text-xl md:text-3xl font-bold shadow-lg shadow-black/50"
             >
               GABUNG YUK!
             </h2>
@@ -338,7 +351,7 @@
                   href="https://discord.com/invite/PhvCBM9E"
                   target="_blank"
                   rel="noopener"
-                  class="text-2xl font-bold p-4 w-full bg-gradient-to-br from-purple-300 to-blue-300 rounded-xl flex items-center gap-2"
+                  class="text-2xl font-bold p-4 w-full bg-gradient-to-br from-purple-300 to-blue-300 rounded-xl flex items-center gap-2 transition-all duration-[.3s] hover:shadow-lg hover:shadow-blue-600"
                 >
                   <img src="src/img/discord.svg" alt="dc" class="w-12" />
                   <h3>Ngoding Bareng</h3>
@@ -350,7 +363,7 @@
                   href="https://discord.gg/SCFWPATh"
                   target="_blank"
                   rel="noopener"
-                  class="text-2xl font-bold p-4 w-full bg-gradient-to-br from-purple-300 to-blue-300 rounded-xl flex items-center gap-2"
+                  class="text-2xl font-bold p-4 w-full bg-gradient-to-br from-purple-300 to-blue-300 rounded-xl flex items-center gap-2 transition-all duration-[.3s] hover:shadow-lg hover:shadow-blue-600"
                 >
                   <img src="src/img/discord.svg" alt="dc" class="w-12" />
                   <h3>WPU - UNPAS</h3>
@@ -362,7 +375,7 @@
                   href="https://discord.gg/CUAHkwQP"
                   target="_blank"
                   rel="noopener"
-                  class="text-2xl font-bold p-4 w-full bg-gradient-to-br from-purple-300 to-blue-300 rounded-xl flex items-center gap-2"
+                  class="text-2xl font-bold p-4 w-full bg-gradient-to-br from-purple-300 to-blue-300 rounded-xl flex items-center gap-2 transition-all duration-[.3s] hover:shadow-lg hover:shadow-blue-600"
                 >
                   <img src="src/img/discord.svg" alt="dc" class="w-12" />
                   <h3 class="flex items-center gap-2">
@@ -373,22 +386,26 @@
             </div>
           </div>
 
-          <div class="mt-16 bg-gray-200 p-6 rounded-xl shadow-xl shadow-black/30">
+          <div
+            class="mt-16 bg-gray-800 p-8 rounded-xl shadow-xl shadow-black/30 w-full"
+          >
             <h2
-              class="bg-blue-600 text-white py-4 px-16 rounded-full text-center text-xl md:text-3xl font-bold"
+              class="bg-gradient-to-br from-blue-600 to-fuchsia-600 text-white py-4 px-16 rounded-full text-center text-xl md:text-3xl font-bold"
             >
               HUBUNGI SAYA
             </h2>
             <div class="mt-8 flex flex-col gap-4">
-              <div class="flex items-center ">
+              <div class="flex items-center">
                 <a
                   href="https://api.whatsapp.com/send/?phone=62895805001933&text&type=phone_number&app_absent=0"
                   target="_blank"
                   rel="noopener"
-                  class="text-2xl font-bold p-4 w-full bg-green-300 rounded-xl flex items-center gap-2"
+                  class="text-2xl font-bold p-4 w-full text-green-600 bg-white hover:text-white hover:bg-green-600 rounded-xl flex items-center gap-4 transition-all duration-[.3s] ease-in-out"
                 >
                   <i class="fa fa-whatsapp text-4xl"></i>
-                  <h3 class="flex items-center gap-2 text-xl md:text-2xl">WhatsApp</h3>
+                  <h3 class="flex items-center text-xl md:text-2xl">
+                    WhatsApp
+                  </h3>
                 </a>
               </div>
 
@@ -397,10 +414,10 @@
                   href="https://facebook.com"
                   target="_blank"
                   rel="noopener"
-                  class="text-2xl font-bold p-4 w-full bg-blue-300 rounded-xl flex items-center gap-4"
+                  class="text-2xl font-bold p-4 w-full bg-white text-blue-600 hover:text-white hover:bg-blue-600 rounded-xl flex items-center gap-6 transition-all duration-[.3s] ease-in-out"
                 >
                   <i class="fa fa-facebook text-4xl"></i>
-                  <h3 class="flex items-center gap-4">Facebook</h3>
+                  <h3 class="flex items-center">Facebook</h3>
                 </a>
               </div>
 
@@ -409,10 +426,10 @@
                   href="https://web.telegram.org/"
                   target="_blank"
                   rel="noopener"
-                  class="text-2xl font-bold p-4 w-full bg-gradient-to-br from-blue-300 to-purple-300 rounded-xl flex items-center gap-2"
+                  class="text-2xl font-bold p-4 w-full bg-white text-fuchsia-600 hover:bg-fuchsia-600 hover:text-white rounded-xl flex items-center gap-4 transition-all duration-[.3s] ease-in-out"
                 >
                   <i class="fa fa-instagram text-4xl"></i>
-                  <h3 class="flex items-center gap-4">Instagram</h3>
+                  <h3 class="flex items-center">Instagram</h3>
                 </a>
               </div>
             </div>
@@ -422,9 +439,11 @@
     </section>
 
     <footer
-      class="w-full text-center p-4 pb-6 bg-gradient-to-br from-blue-600 to-pink-600 text-white"
+      class="w-full text-center bg-gray-400 p-8 pb-6 md:px-12"
     >
-      <h1>©copyright by Rozan Nouval 2024</h1>
+      <div class="w-full bg-gradient-to-br from-blue-600 to-pink-600 text-white p-5 rounded-full shadow-lg shadow-black/50">
+        <h1>© copyright by Rozan Nouval 2024</h1>
+      </div>
     </footer>
 
     <!-- Import Particles.js and app.js files -->
