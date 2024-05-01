@@ -112,7 +112,7 @@ body {
   text-decoration: none;
 }
 
-.qoutes::after,
+/* .qoutes::after,
 .button-portofolio::after {
   content: "";
   position: absolute;
@@ -125,12 +125,12 @@ body {
   transform: scaleY(0);
   transition: all 0.3s ease-in-out;
   transform-origin: top left;
-}
+} */
 
-.qoutes:hover::after,
+/* .qoutes:hover::after,
 .button-portofolio:hover::after {
   transform: scaleY(1);
-}
+} */
 
 .motivasi div {
   position: relative;
@@ -146,7 +146,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: .5rem;
-  background-image: linear-gradient(to bottom, black, red);
+  background-image: linear-gradient(to bottom, #00fff7, red);
   transform: scaleY(0);
   transition: all 0.3s ease-in-out;
   transform-origin: bottom;
